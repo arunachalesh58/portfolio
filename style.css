@@ -11,7 +11,7 @@ html{
     scroll-behavior: smooth;
 }
 /*linked in and github button*/
-#block-1,#block-2{
+#block-1{
     color: #fff;
     display: block;
     width: 160px!important;
