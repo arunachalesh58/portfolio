@@ -10,7 +10,22 @@
 html{
     scroll-behavior: smooth;
 }
-
+/*linked in and github button*/
+#block-1,#block-2{
+    color: #fff;
+    display: block;
+    width: 160px!important;
+    height: 45px;
+    outline: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    flex-wrap: nowrap;
+    
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
 /* custom scroll bar */
 ::-webkit-scrollbar {
     width: 10px;
