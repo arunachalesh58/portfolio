@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 
 *{
-    
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -13,20 +12,19 @@ html{
 }
 /*linked in and github button*/
 #block-1,#block-2{
-    color: #fff;
-    display: block;
-    width: 160px!important;
-    height: 45px;
-    outline: none;
-    font-size: 18px;
-    font-weight: 500;
-    border-radius: 6px;
-    background: crimson;
-    cursor: pointer;
-    flex-wrap: nowrap;
-    
-    border: 2px solid crimson;
-    transition: all 0.3s ease;
+     color: #fff;
+  display: block;
+  width: 160px!important;
+  height: 45px;
+  outline: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  flex-wrap: nowrap;
+ 
+  border: 2px solid crimson;
+  transition: all 0.3s ease;
 }
 /* custom scroll bar */
 ::-webkit-scrollbar {
@@ -113,23 +111,23 @@ section .title::after{
     align-items: center;
     justify-content: space-between;
 }
-.navbar .logo a{
+.navbar .logo-top a{
     color: #fff;
     font-size: 35px;
     font-weight: 600;
 }
-.navbar .logo a span{
+.navbar .logo-top a span{
     color: crimson;
     transition: all 0.3s ease;
 }
-.navbar.sticky .logo a span{
+.navbar.sticky .logo-top a span{
     color: #fff;
 }
-.navbar .menu li{
+.navbar .logo li{
     list-style: none;
     display: inline-block;
 }
-.navbar .menu li a{
+.navbar .logo li a{
     display: block;
     color: #fff;
     font-size: 18px;
@@ -137,21 +135,21 @@ section .title::after{
     margin-left: 25px;
     transition: color 0.3s ease;
 }
-.navbar .menu li a:hover{
+.navbar .logo li a:hover{
     color: crimson;
 }
-.navbar.sticky .menu li a:hover{
+.navbar.sticky .logo li a:hover{
     color: #fff;
 }
 
-/* menu btn styling */
-.menu-btn{
+/* logo btn styling */
+.logo-btn{
     color: #fff;
     font-size: 23px;
     cursor: pointer;
     display: none;
 }
-.scroll-up-btn{
+.go-up{
     position: fixed;
     height: 45px;
     width: 42px;
@@ -171,12 +169,12 @@ background: linear-gradient(118deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100
     pointer-events: none;
     transition: all 0.3s ease;
 }
-.scroll-up-btn.show{
+.go-up.show{
     bottom: 30px;
     opacity: 1;
     pointer-events: auto;
 }
-.scroll-up-btn:hover{
+.go-up:hover{
     filter: brightness(90%);
 }
 
@@ -585,14 +583,14 @@ footer span a:hover{
     }
 }
 @media (max-width: 947px){
-    .menu-btn{
+    .logo-btn{
         display: block;
         z-index: 999;
     }
-    .menu-btn i.active:before{
+    .logo-btn i.active:before{
         content: "\f00d";
     }
-    .navbar .menu{
+    .navbar .logo{
         position: fixed;
         height: 100vh;
         width: 100%;
@@ -603,13 +601,13 @@ footer span a:hover{
         padding-top: 80px;
         transition: all 0.3s ease;
     }
-    .navbar .menu.active{
+    .navbar .logo.active{
         left: 0;
     }
-    .navbar .menu li{
+    .navbar .logo li{
         display: block;
     }
-    .navbar .menu li a{
+    .navbar .logo li a{
         display: inline-block;
         margin: 20px 0;
         font-size: 25px;
@@ -688,7 +686,7 @@ footer span a:hover{
     .right form .error-box{
        width: 150px;
     }
-    .scroll-up-btn{
+    .go-up{
         right: 15px;
         bottom: 15px;
         height: 38px;
