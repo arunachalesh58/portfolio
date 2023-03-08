@@ -1,4 +1,4 @@
-/*  import google fonts */
+/*  import google ionts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 
 *{
@@ -371,10 +371,10 @@ background: linear-gradient(118deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100
     width: 60%;
 }
 .skills-content .right .js::before{
-    width: 80%;
+    width: 50%;
 }
 .skills-content .right .php::before{
-    width: 50%;
+    width: 70%;
 }
 .skills-content .right .mysql::before{
     width: 70%;
