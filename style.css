@@ -182,7 +182,7 @@ background: linear-gradient(118deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100
 /* home section styling */
 .home{
     display: flex;
-    background: url("images/552002.jpg") no-repeat center;
+    background: url("images/5520021.jpg") no-repeat center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -694,4 +694,18 @@ footer span a:hover{
         font-size: 23px;
         line-height: 38px;
     }
+}
+.project-button {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-top: 10px;
+    background-color: #ff000d; /* Bootstrap primary color */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.project-button:hover {
+    background-color: #ff0303; /* Darker shade on hover */
 }
